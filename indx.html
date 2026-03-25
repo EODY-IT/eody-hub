@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EODY|first|fine website</title>
+  <link href="https://fonts.googleapis.com/css2?=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <style type="text/css" media="all">
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background: #0B0E14;
+      padding: 20px;
+    }
+    .nav{
+      position: sticky;
+      top: 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 2vh;
+      background: rgba(22, 27, 32, 0.8);
+      padding: 15px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      border: 1px solid #464C52;
+    }
+    .a{
+      text-decoration: none;
+      color: #8B949E;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .a:hover{
+      color: #1615A8;}
+    .head1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      margin-top: 7vh;
+      margin-bottom: 30px;
+    }
+    .hub{
+      background: #464C52;
+      font-weight: 800;
+      border-radius: 15px;
+      padding: 5px;
+      color: #2F81F7;
+    }
+    .eody{
+      color: white;
+    }
+    .main{
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .profile-img{
+      margin-bottom: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 100px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      border: 1px solid #464C52;
+    }
+    .profile-img:hover{
+      transform: scale(1.05);
+    }
+    .inp{
+      outline: none;
+      padding: 12px 20px;
+      border-radius: 20px;
+      width: 250px;
+      margin-bottom: 5px;
+      border: 1px solid #464C52;
+      background: #161B22;
+    }
+    .inp:hover{
+      box-shadow: 0 0 10px rgba(47, 129, 247, 0.2);
+      border: 1px solid #1E1CD5;
+    }
+    .btn{
+      margin-bottom: 20px;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 20px;
+      color: white;
+      background: #2F81F7;
+    }
+    .text{
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      max-width: 600px;
+      border-radius: 10px;
+      color: #8B949E;
+      text-align: center;
+      padding: 30px;
+      background: #161B22;
+      border: 1px solid #464C52;
+    }
+    .text p{
+      
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .hidden{
+      position: sticky;
+      top: 80px;
+      z-index: 1000;
+      display: none;
+      border: 0.5px solid #8B949E;
+      color: white;
+      text-align: center;
+      background: #161B22;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .hidden.open{
+      display: block;
+    }
+    .hid{
+      padding: 10px;
+      color: #8B949E;
+      margin-bottom: 10px;
+      border-bottom: 0.5px solid #8B949E;
+    }
+    .master2{
+      display: none;
+      background: rgba(22, 27, 32, 10);
+      padding: 20px;
+      border-radius: 20px;margin-top: 6vh;
+    }
+    .account{
+      color: #8B949E;
+      text-align: center;
+      margin-bottom: 7vh;
+      margin-top: 10vh;
+    }
+    .account h2{
+      color: white;
+      background: #2F81F7;
+      border-radius: 50px;
+    }
+    .master3{
+      display: none;
+    }
+     .about{
+      background: #1E1F2A;
+      color: #ACAEC0;
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid #ACAEC0;
+    }
+    .sub{
+      color: #ACAEC0;
+      margin-top: 5vh;
+      margin-bottom: 3vh;
+      border-bottom: 0.5px solid #ACAEC0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <p class="a" id="bt">▲</p>
+    <a class="a" href="index.html">Home</a>
+    <a  class="a" href="style.html">Project</a>
+    <a class="a" href="">logIn</a>
+  </nav>
+    <div class="hidden" id="hidden">
+    <p class="hid" id="sing">Sign in</p>
+    <p class="hid" id="about">About us</p>
+    <p class="hid" id="settings">settings</p>
+  </div>
+  <div class="master" id="master1">
+  <div class="head1">
+    <h3><span class="eody">EODY</span><span class="hub">hub</span></h3>
+  </div>
+  <div class="main">
+    <img src="b.jpg" alt="profile" class="profile-img"/>
+    <div class="search">
+      <input id="inp" class="inp" placeholder="Start Search..."/>
+      <button id="btn" class="btn">search</button>
+       <p id="cont" style="margin-top: 15px; font-weight: bold;"></p>
+    </div>
+      <div class="text">
+        <p>I'm Emmanuel, and I'm trying to be a solo all round IT personal, because of this i ways pray that the Lord Almighty, will look down for me and helpp me.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="master2" id="master2">
+    
+    <div class="account">
+      <h2>Sign In</h2>
+      <p>sign in to continue</p>
+    </div>
+    <div class="main" id="inp">
+      <input class="inp" type="text" id="inp" placeholder="Enter your name..." />
+      
+      <input class="inp" type="password" id="inp" placeholder="Enter your password..." />
+      
+      <input class="inp"type="text" id="inp" placeholder="Enter your name..." />
+      
+      <button class="btn"type="submit">Click</button>
+      
+      <p>Need help?</p>
+      <a href="#">forgotten password</a>
+    </div>
+  </div>
+  
+    <div class="master3" id="master3">
+    <div>
+      <h2 class="sub">About us</h2>
+      <h3 class="sub">EODY</h3>
+      <p class="about">EODY is a young boy from Offinso, but currently, he is staying at Nkawie.</p>
+      
+      <h3 class="sub">IT</h3>
+      <p class="about">When eody was in basic 8 he waent a new school, that was when everything started. There was a teacher that teaches IT and at that time i new some little things about it, because of that the teacher became my friend because of that if we do text and i score less he kills </p>
+    </div>
+    
+    <div>
+</body>
+
+<script type="text/javascript" charset="utf-8">
+  const hidden=document.getElementById("hidden");
+  const btn=document.getElementById("bt");
+  const master1 =document.getElementById("master1");
+  const master2 =document.getElementById("master2");
+  const master3 =document.getElementById("master3");
+  
+  btn.addEventListener("click", ()=>{
+    hidden.classList.toggle("open");
+  });
+  
+  function showSection(showSection){
+  [master1, master2, master3].forEach(sec =>{
+    sec.style.display="none"
+  });
+    showSection.style.display="block"
+    hidden.classList.remove("open");
+  };
+  document.getElementById("sing").addEventListener("click", ()=>showSection(master2));
+  document.getElementById("about").addEventListener("click", ()=>showSection(master3));
+</script>
+</html>
